@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loreley</title>
+
+    <!-- /*emplacement favicon*/ -->
+    <link rel="icon" href="../favicon/faviLoreley.ico" />
+    
+    <!-- link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- link michalsnik css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <!-- Feuille css interne -->
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/titre.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/menu-autresPages.css">
+    <link rel="stylesheet" href="../css/newsletter.css">       
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="../css/catalogue.css">
+
+
+    
+
+</head>
+<body>
+    
+    <nav>
+        <div class="toggle">
+            <i class="fas fa-times fermer"></i>
+            <i class="fas fa-bars ouvrir"></i>
+        </div>
+        <a class="logo" accesskey="h" href="../index.html" aria-label="logo et lien vers la page principale"><svg id="logoMenu" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 441.35 142.8" aria-label="logo du menu"><defs><style>.cls-1{fill:#1d1d1b;}.cls-2,.cls-3{fill:none;stroke:#1d1d1b;stroke-miterlimit:10;}.cls-2{stroke-width:0.5px;}.cls-3{stroke-width:2px;}</style></defs><path class="cls-1" d="M690.5,590.26c-2.62,5-2,11.78-4,20.34a22.13,22.13,0,0,0,25.35-27c4.39-2.55,11.33-7.6,12.16-20.06,1.15-17.4-11.26-27.21-16.51-28.65-5.33-.3-9.38-7.34-10.23-8.93-.08-.1-.14-.2-.21-.28l-10.28,7.43,0,.06a10.07,10.07,0,0,0,.25,9.63,18.37,18.37,0,0,0,6.41,6.81c17.8,10.39,20.43,22.52,16.6,27.64a11.65,11.65,0,0,0-.78,1.15,22.12,22.12,0,0,0-35.26-.64C681.15,582.81,685.21,588.28,690.5,590.26Z" transform="translate(-319.68 -468.13)"/><path class="cls-1" d="M709.6,516.6a3.63,3.63,0,0,0-2.06.17,9.63,9.63,0,0,0-1.9.88,20.5,20.5,0,0,0-3.29,2.59,39.65,39.65,0,0,0-2.85,3.09c-.91,1.07-1.74,2.2-2.58,3.32l-.79-.61c.91-1.09,1.83-2.18,2.81-3.21a39.14,39.14,0,0,1,3.08-3,21.28,21.28,0,0,1,3.5-2.44,9.59,9.59,0,0,1,2-.78A3.76,3.76,0,0,1,709.6,516.6Z" transform="translate(-319.68 -468.13)"/><path class="cls-1" d="M669.63,506a6.48,6.48,0,0,0,6.47,6.48,5.52,5.52,0,0,0,.71,0,12.25,12.25,0,0,0,13.52.17,12.28,12.28,0,0,0,4.13-4.46c.14.17.29.33.44.48l.45.44h0l.48.43a11.61,11.61,0,0,0,1.59,1.11,1.79,1.79,0,0,0,.24.12l.25.15.08.05.59.28a11,11,0,0,0,1.83.66l.23-.35a25.79,25.79,0,0,1,2.45-3.77c2.95-2.48,6.56-2.67,9.29-3.81l.49-.2.49-.22.39-.17.33-.16a7.12,7.12,0,0,0,.88-.47l.12-.07a2,2,0,0,0,.25-.14l.35-.23a6.84,6.84,0,0,0,.91-.69l.25-.23.06-.06.14-.15a1.13,1.13,0,0,0,.1-.13.79.79,0,0,0,.11-.14h0a1.54,1.54,0,0,1-.45-.2h0a1.72,1.72,0,0,1-.79-1,1.83,1.83,0,0,1,.19-1.43,1.69,1.69,0,0,1,1.09-.79l.81-.22a11.11,11.11,0,0,0,6.63-4.62,16.17,16.17,0,0,0,2.17-6.76,1.55,1.55,0,0,1,.06-.31.85.85,0,0,1,.06-.17.47.47,0,0,1,.06-.15c0-.07.07-.14.11-.2a2.68,2.68,0,0,0,.27-2.75s0,0,0-.05-.13-.25-.21-.37a10.65,10.65,0,0,1,3,2.82,11,11,0,0,1,1.16,4.34c0-.27.07-.52.09-.79a18.19,18.19,0,1,0-36.29-1.82,17.23,17.23,0,0,0,.15,2.28,11.79,11.79,0,0,0-2.8-.33,12.22,12.22,0,0,0-12.24,12.25c0,.17,0,.34,0,.51A6.47,6.47,0,0,0,669.63,506Z" transform="translate(-319.68 -468.13)"/><path class="cls-2" d="M684.74,534.52a1.72,1.72,0,0,0,.48-.26l1.37-1,10.28-7.42,0-.05.17.32c.8,1.49,4.44,7.84,9.31,8.81.55.12,1.33.1,1.53-.42,1.56-4,13.27-13.16,13.68-16.87s-1.26-8.13-.91-11.65v-.06s0,0,0,0,0,0,0,0a1.55,1.55,0,0,1,0-.22,7.24,7.24,0,0,1,2.6-5.57h0a10.41,10.41,0,0,0,3.39-1.57h0a11,11,0,0,0,4.69-8.17v-.08c0-.26,0-.5,0-.78s0-.4,0-.6a11,11,0,0,0-1.16-4.34,10.65,10.65,0,0,0-3-2.82c.08.12.14.24.21.37s0,0,0,.05a2.68,2.68,0,0,1-.27,2.75c0,.06-.07.13-.11.2a.94.94,0,0,0-.06.15.85.85,0,0,0-.06.17,1.55,1.55,0,0,0-.06.31,16.17,16.17,0,0,1-2.17,6.76,11.11,11.11,0,0,1-6.63,4.62l-.81.22a1.69,1.69,0,0,0-1.09.79,1.83,1.83,0,0,0-.19,1.43,1.72,1.72,0,0,0,.79,1h0a1.54,1.54,0,0,0,.45.2h0a.79.79,0,0,1-.11.14,1.13,1.13,0,0,1-.1.13l-.14.15-.06.06-.25.23a6.84,6.84,0,0,1-.91.69l-.35.23a2,2,0,0,1-.25.14l-.12.07a7.12,7.12,0,0,1-.88.47l-.33.16-.39.17-.49.22-.49.2c-2.73,1.14-6.34,1.33-9.29,3.81a25.79,25.79,0,0,0-2.45,3.77l-.23.35,0,.08c-2.87,4.49-7.34,11.21-9.79,12.84-3.58,2.38-14.19,1.35-14.62,3.68S677.69,536.92,684.74,534.52Z" transform="translate(-319.68 -468.13)"/><path class="cls-1" d="M714.7,521.74l.34.15a.51.51,0,0,0-.67.29.41.41,0,0,0,0,.19.5.5,0,0,0,.33.48l4.19,1.68a.52.52,0,0,0,.68-.29.65.65,0,0,0,0-.19.52.52,0,0,0-.33-.48l0,0,3.89-5.07a1.78,1.78,0,0,0-.42-2.56,12.1,12.1,0,0,0-6.21-1.92c-1.92,0-2.93,1-2.68,2.91Z" transform="translate(-319.68 -468.13)"/><path class="cls-1" d="M413.51,577.77a22.12,22.12,0,0,0-35.26.64,11.65,11.65,0,0,0-.78-1.15c-3.83-5.12-1.2-17.25,16.6-27.64a18.37,18.37,0,0,0,6.41-6.81,10.07,10.07,0,0,0,.25-9.63l0-.06-10.28-7.43c-.07.08-.13.18-.21.28-.84,1.59-4.9,8.63-10.22,8.93-5.26,1.44-17.67,11.25-16.51,28.65.83,12.46,7.76,17.51,12.16,20.06a22.13,22.13,0,0,0,25.34,27c-2-8.56-1.38-15.34-4-20.34C402.26,588.28,406.32,582.81,413.51,577.77Z" transform="translate(-319.68 -468.13)"/><path class="cls-1" d="M377.87,516.6a3.76,3.76,0,0,1,2.1,0,9.59,9.59,0,0,1,2,.78,21.28,21.28,0,0,1,3.5,2.44,39.14,39.14,0,0,1,3.08,3c1,1,1.9,2.12,2.82,3.21l-.8.61c-.84-1.12-1.67-2.25-2.58-3.32a39.65,39.65,0,0,0-2.85-3.09,20.06,20.06,0,0,0-3.29-2.59,9.63,9.63,0,0,0-1.9-.88A3.63,3.63,0,0,0,377.87,516.6Z" transform="translate(-319.68 -468.13)"/><path class="cls-1" d="M417.84,506a6.47,6.47,0,0,1-6.47,6.48,5.52,5.52,0,0,1-.71,0A12.22,12.22,0,0,1,393,508.09c-.15.17-.29.33-.44.48l-.46.44h0c-.16.15-.31.29-.48.43a11.61,11.61,0,0,1-1.59,1.11,1.79,1.79,0,0,1-.24.12l-.25.15-.08.05-.59.28a11,11,0,0,1-1.83.66l-.23-.35a25.79,25.79,0,0,0-2.45-3.77c-2.95-2.48-6.56-2.67-9.29-3.81l-.49-.2-.49-.22-.39-.17-.33-.16a7.12,7.12,0,0,1-.88-.47l-.12-.07a2,2,0,0,1-.25-.14l-.35-.23a6.84,6.84,0,0,1-.91-.69l-.25-.23a.34.34,0,0,0-.06-.06l-.14-.15a1.13,1.13,0,0,1-.1-.13.79.79,0,0,1-.11-.14h0a1.6,1.6,0,0,0,.44-.2h0a1.72,1.72,0,0,0,.79-1,1.83,1.83,0,0,0-.19-1.43,1.69,1.69,0,0,0-1.09-.79l-.81-.22a11.06,11.06,0,0,1-6.62-4.62,16.06,16.06,0,0,1-2.18-6.76,1.07,1.07,0,0,0-.06-.31.49.49,0,0,0-.06-.17.47.47,0,0,0-.06-.15c0-.07-.07-.14-.11-.2a2.7,2.7,0,0,1-.27-2.75s0,0,0-.05.13-.25.21-.37a10.79,10.79,0,0,0-3,2.82,11,11,0,0,0-1.16,4.34c0-.27-.07-.52-.09-.79a18.19,18.19,0,1,1,36.29-1.82,19.12,19.12,0,0,1-.14,2.28,11.65,11.65,0,0,1,2.79-.33,12.24,12.24,0,0,1,12.25,12.25,4.35,4.35,0,0,1,0,.51,6.51,6.51,0,0,1,8.83.39A6.44,6.44,0,0,1,417.84,506Z" transform="translate(-319.68 -468.13)"/><path class="cls-2" d="M402.74,534.52a1.77,1.77,0,0,1-.49-.26l-1.37-1-10.28-7.42,0-.05-.17.32c-.79,1.49-4.44,7.84-9.31,8.81-.55.12-1.33.1-1.53-.42-1.56-4-13.27-13.16-13.68-16.87s1.26-8.13.92-11.65v-.06h0v-.24a7.24,7.24,0,0,0-2.6-5.57h0a10.51,10.51,0,0,1-3.39-1.57h0a11,11,0,0,1-4.68-8.17v-.08a6.57,6.57,0,0,1,0-.78c0-.2,0-.4,0-.6a11,11,0,0,1,1.16-4.34,10.79,10.79,0,0,1,3-2.82c-.08.12-.14.24-.21.37s0,0,0,.05a2.7,2.7,0,0,0,.27,2.75c0,.06.07.13.11.2a.94.94,0,0,1,.06.15.49.49,0,0,1,.06.17,1.55,1.55,0,0,1,.06.31,16.06,16.06,0,0,0,2.18,6.76,11.06,11.06,0,0,0,6.62,4.62l.81.22a1.69,1.69,0,0,1,1.09.79,1.83,1.83,0,0,1,.19,1.43,1.72,1.72,0,0,1-.79,1h0a1.6,1.6,0,0,1-.44.2h0a.79.79,0,0,0,.11.14,1.13,1.13,0,0,0,.1.13l.14.15a.34.34,0,0,1,.06.06l.25.23a6.84,6.84,0,0,0,.91.69l.35.23a2,2,0,0,0,.25.14l.12.07a7.12,7.12,0,0,0,.88.47l.33.16.39.17.49.22.49.2c2.73,1.14,6.34,1.33,9.29,3.81a25.79,25.79,0,0,1,2.45,3.77l.23.35.05.08c2.87,4.49,7.34,11.21,9.79,12.84,3.58,2.38,14.19,1.35,14.62,3.68S409.78,536.92,402.74,534.52Z" transform="translate(-319.68 -468.13)"/><path class="cls-1" d="M372.77,521.74l-.34.15a.51.51,0,0,1,.67.29.41.41,0,0,1,0,.19.5.5,0,0,1-.33.48l-4.19,1.68a.52.52,0,0,1-.68-.29.63.63,0,0,1,0-.19.51.51,0,0,1,.32-.48l0,0-3.89-5.07a1.78,1.78,0,0,1,.42-2.56A12.1,12.1,0,0,1,371,514c1.92,0,2.93,1,2.68,2.91Z" transform="translate(-319.68 -468.13)"/><circle class="cls-3" cx="6.6" cy="71.4" r="5.6"/><circle class="cls-3" cx="434.75" cy="19.19" r="5.6"/><circle class="cls-3" cx="419.29" cy="39.15" r="5.6"/><circle class="cls-3" cx="25.09" cy="104.06" r="5.6"/><circle class="cls-3" cx="27.77" cy="44.75" r="5.6"/><circle class="cls-3" cx="423.56" cy="71.4" r="5.6"/><path class="cls-1" d="M423.78,608.61a3.84,3.84,0,0,1-1.38-3,9.84,9.84,0,0,1,.53-2.88,14.56,14.56,0,0,0,.39-2.75q0-11.65-1.31-44.81-1.31-28.29-1.31-44.67a2.29,2.29,0,0,1,.91-1.9,3.51,3.51,0,0,1,2.23-.72,3.87,3.87,0,0,1,2.75,1.11,3.55,3.55,0,0,1,1.18,2.69q0,7.86.79,23.58.65,17.43.65,23.58l.13,1.57v3.15q.41,11.39.4,34.06v3.41h10.09q2.75,2,2.75,3.93a3.76,3.76,0,0,1-1,2.55,3,3,0,0,1-2.3,1.12,7.58,7.58,0,0,1-1.44-.26l-.52-.14a16.27,16.27,0,0,1-2.49.14h-2.23a14.47,14.47,0,0,0-2.1-.14,4.76,4.76,0,0,1-6.74.33Z" transform="translate(-319.68 -468.13)"/><path class="cls-1" d="M462.75,608.74a16.08,16.08,0,0,1-4.71-5.83,51.68,51.68,0,0,1-4.72-17.42,130.19,130.19,0,0,1-1.18-17.16,21.49,21.49,0,0,1,.13-2.63v-2.35c0-.44,0-.66-.13-.66v-2.36l.13-9.17q.14-4.18,1.05-13.36a45.19,45.19,0,0,1,3-12.19,9.84,9.84,0,0,1,2.35-4,4.61,4.61,0,0,1,3.28-1.38,22.57,22.57,0,0,1,9.43,1.9,20.08,20.08,0,0,1,7.08,5.31,30.14,30.14,0,0,1,4.45,8,47.63,47.63,0,0,1,2.62,10.16,83,83,0,0,1,.79,11.66v1q0,4.07.13,7.33l.13,7.47q0,37.74-17.56,37.73A10.2,10.2,0,0,1,462.75,608.74Zm10.09-5.24a12.19,12.19,0,0,0,3-5.17,50.65,50.65,0,0,0,3-14.42q.66-6.67.66-11.52,0-5.91-.92-15.46-.8-10.09-.79-15.07V539.5a14.34,14.34,0,0,0-3.34-8.65,9.51,9.51,0,0,0-7.54-3.66c-3,0-4.93,1.7-5.89,5.1a34.7,34.7,0,0,0-1.31,10.48c0,1.67.05,3.06.13,4.2v3.53l-.26,6c-.18,1.84-.26,3.85-.26,6q0,7.08.39,14a114.44,114.44,0,0,0,2.62,19.13q2.1,9.69,6.16,9.69A6.09,6.09,0,0,0,472.84,603.5Z" transform="translate(-319.68 -468.13)"/><path class="cls-1" d="M518.56,604.35a72.2,72.2,0,0,1-4.06-14l-.91-4.46q-3.81-18.74-4.85-21.35h-1.57q0,3.79-.14,6.94v7.2q0,17.57,2.49,27.39l-1.44,3.53h-3.66l-1.71-2,.13-8.78q0-11.79-1.17-35.76-1.07-25.56-1.05-35.78c0-4.19,1.43-6.28,4.32-6.28q7.08,0,11.59,3.67t4.52,10.22v9.17a18.26,18.26,0,0,1-.65,4.52,21.48,21.48,0,0,1-1.44,4.12l-2.49,4.72-2.1,3.93.65,3.15,1.84,9.3q1.83,10.09,3.54,16.37a63.93,63.93,0,0,0,4.19,11.4l.79,1.57a10.23,10.23,0,0,1,1.31,4.2,3.58,3.58,0,0,1-.79,2.29,2.55,2.55,0,0,1-2.09,1C521.88,610.64,520.14,608.55,518.56,604.35Zm-6-54.17a40.15,40.15,0,0,0,2-12,28.88,28.88,0,0,0-1-7.86,5.74,5.74,0,0,0-5.9-4.32l-.26.65-.26,1.18.26,15.46q.26,6.81.26,14.81Q510.57,556.67,512.6,550.18Z" transform="translate(-319.68 -468.13)"/><path class="cls-1" d="M542.47,608.94a4.14,4.14,0,0,1-1.5-2.88v-6a24.5,24.5,0,0,1-.13-2.75c0-1.84-.14-4.63-.4-8.39l-.26-8.38q0-6.42.4-19.13.51-11.4.52-19.13a54.71,54.71,0,0,0-.4-5.5c-.26-2.53-.38-4.37-.38-5.5q0-9.3,5.5-9.3a35.81,35.81,0,0,1,10,1.7c3.8,1.13,5.7,2.49,5.7,4.06a3.39,3.39,0,0,1-1.12,2.42,7.93,7.93,0,0,1-2.68,1.77,53.2,53.2,0,0,0-10-2.62c.09,1.31.13,3.19.13,5.64q0,5.24-.13,9.43c-.26,4.19-.39,7.34-.39,9.43l.39,2.1,2.1-.14a23.69,23.69,0,0,1,2.62-.12q6.29,0,6.29,3.66a3.08,3.08,0,0,1-1.18,2.43,4.53,4.53,0,0,1-3,1,19.43,19.43,0,0,1-3.67-.26h-3.27q.26,3.41.26,10t-.13,11.79q-.39,8-.39,11.92c0,4.89.08,7.34.26,7.34l4.32-.13c1.49-.09,3.28-.14,5.37-.14,3.32,0,5,1.06,5,3.15a3.12,3.12,0,0,1-1.63,2.82,7.72,7.72,0,0,1-4,1H545.56A4.62,4.62,0,0,1,542.47,608.94Z" transform="translate(-319.68 -468.13)"/><path class="cls-1" d="M585.26,608.94a8.35,8.35,0,0,1-4.46,1.31,3.35,3.35,0,0,1-2.69-1.38,4.57,4.57,0,0,1-1.11-2.94q0-11,.91-29.35.8-19.51.79-29.22v-.91q-.78-8.26-.79-12.32,0-12.45,4.59-12.44a3.35,3.35,0,0,1,3.28,3.27,49.78,49.78,0,0,1-.4,5,45.58,45.58,0,0,0-.39,5q0,8.77.13,15.85t.14,15.72a17.72,17.72,0,0,0-.66,5.5v1.58l-.26,10.34c-.18,3.06-.27,6.56-.27,10.48q0,9,4.33,9.05c.17,0,.45,0,.85-.07s.94-.06,1.64-.06a27.13,27.13,0,0,1,3-.14c4.72,0,7.08,1.32,7.08,3.93a2.75,2.75,0,0,1-1.18,2.23,6.21,6.21,0,0,1-2.89,1.18A37.46,37.46,0,0,0,585.26,608.94Z" transform="translate(-319.68 -468.13)"/><path class="cls-1" d="M614.79,608.94a4.14,4.14,0,0,1-1.5-2.88v-6a24.5,24.5,0,0,1-.13-2.75c0-1.84-.13-4.63-.4-8.39l-.26-8.38q0-6.42.4-19.13.51-11.4.52-19.13c0-1.22-.13-3-.39-5.5s-.39-4.37-.39-5.5q0-9.3,5.5-9.3a35.81,35.81,0,0,1,10,1.7c3.8,1.13,5.7,2.49,5.7,4.06a3.35,3.35,0,0,1-1.12,2.42,7.93,7.93,0,0,1-2.68,1.77,53.2,53.2,0,0,0-10-2.62c.09,1.31.13,3.19.13,5.64q0,5.24-.13,9.43c-.26,4.19-.39,7.34-.39,9.43l.39,2.1,2.1-.14a23.69,23.69,0,0,1,2.62-.12q6.28,0,6.29,3.66a3.08,3.08,0,0,1-1.18,2.43,4.53,4.53,0,0,1-3,1,19.43,19.43,0,0,1-3.67-.26H620q.25,3.41.26,10t-.13,11.79q-.39,8-.39,11.92,0,7.33.26,7.34l4.32-.13c1.49-.09,3.28-.14,5.37-.14,3.32,0,5,1.06,5,3.15a3.12,3.12,0,0,1-1.63,2.82,7.7,7.7,0,0,1-4,1H617.88A4.62,4.62,0,0,1,614.79,608.94Z" transform="translate(-319.68 -468.13)"/><path class="cls-1" d="M656.13,607.37q1.44-2.76,1.45-22.28a84.06,84.06,0,0,0-.66-10l-.39-3.8a51,51,0,0,1-.4-5.38v-3.4q-1.3-3.27-4.78-12.18t-5.57-14.94q-2.49-6.95-2.49-9.43v-.66l3-2.23q2.22.27,4.71,5.77a116.46,116.46,0,0,1,4.65,13.88q2.57,9,2.56,9.57c.35-1,1-4.23,2.1-9.83a136.39,136.39,0,0,1,3.53-14.8c1.49-4.28,3-6.42,4.59-6.42a3.57,3.57,0,0,1,2.29.78,2.46,2.46,0,0,1,1,2q0,6.69-3.66,18.87-3.94,13.23-3.94,19.13v39.43q0,8.78-4.32,8.78C658.32,610.25,657.09,609.29,656.13,607.37Z" transform="translate(-319.68 -468.13)"/></svg></a>
+        <ul id="menu">
+            <!-- import depuis dossier autresPages -->
+            <li><a href="/autresPages/biographie.html" accesskey="a" aria-label="Lien vers l'histoire de Loreley">A propos</a></li>
+            <li><a href="/autresPages/blog.html" accesskey="b" aria-label="Lien vers notre blog">Blog</a></li>
+            <li><a href="/autresPages/catalogue.html" accesskey="c" aria-label="Lien vers nos produits">Catalogue</a></li>
+            <li><a href="#" accesskey="p" aria-label="Panier d'achat"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+    </nav>
+
+    <header>
+            <section id="blocOrnement"></section>        
+            <section class="titreH container">
+                <h1>Catalogue de bouteille</h1>
+            </section>
+    </header>
+
+    <main>
+        
+        
+        <section id="carouselExampleCaptions" class="carousel slide formatCarrousel" data-bs-ride="carousel">
+            <article class="carousel-indicators ">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </article>
+            <article class="carousel-inner carousel-format">
+                <div class="carousel-item active parent">
+                    <img src="../image/produit_slide/bottle.jpg" class="d-block w-100" alt="photo produit de la bouteille Bécot-bécot">
+                    <div class="carousel-caption d-none d-md-block textCarrousel">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugit tempore earum possimus suscipit cum?</p>
+                        <button type="button" accesskey="s" class="btnShop" aria-label="Un boutton pour aller vers le catalogue"><a href="./autresPages/catalogue.html">En savoir plus sur le produit</a></button>
+                    </div>
+                </div>
+                <div class="carousel-item parent">
+                <img src="../image/produit_slide/bottle2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block textCarrousel">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugit tempore earum possimus suscipit cum?</p>
+                    <button type="button" accesskey="s" class="btnShop" aria-label="Un boutton pour aller vers le catalogue"><a href="./autresPages/catalogue.html">En savoir plus sur le produit</a></button>
+                </div>
+                </div>
+                <div class="carousel-item parent">
+                <img src="../image/produit_slide/frink-girls.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block textCarrousel">
+                    <h5>Third slide label</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fugit tempore earum possimus suscipit cum?</p>
+                    <button type="button" accesskey="s" class="btnShop" aria-label="Un boutton pour aller vers le catalogue"><a href="./autresPages/catalogue.html">En savoir plus sur le produit</a></button>
+
+                </div>
+                </div>
+            </article>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <section id="premiereCategorie" class="categorie ">
+            <article class="titreCategorie">
+                <div class="blocGauche plate"></div>
+                <h3>Les Sirènes plates</h3>
+                <div class="blocDroite plate"></div>
+            </article>
+            <article class="container produits autre">
+                
+                <div class="flex-produits">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/inee-des-dieux.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">Anti-sèche</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/inee-des-dieux.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">Menthe religieuse</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/inee-des-dieux.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">Pêcher de l'été</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-produits">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/inee-des-dieux.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">Inée des Dieux</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/inee-des-dieux.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">L'effet du Rhin</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/inee-des-dieux.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">L'éveil des papilles</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </article>
+            <article class="container produits mobile">
+                
+                <div class="flex-produits">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/inee-des-dieux.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body align-mobile">
+                            <h5 class="card-title">Anti-sèche</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/inee-des-dieux.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body align-mobile">
+                            <h5 class="card-title">Menthe religieuse</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-produits">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/inee-des-dieux.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body align-mobile">
+                            <h5 class="card-title">Inée des Dieux</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/inee-des-dieux.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body align-mobile">
+                            <h5 class="card-title">L'effet du Rhin</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-produits">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/inee-des-dieux.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body align-mobile">
+                            <h5 class="card-title">Inée des Dieux</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/inee-des-dieux.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body align-mobile">
+                            <h5 class="card-title">L'effet du Rhin</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </article>
+        </section>
+
+        <section class="categorie">
+            <article class="titreCategorie">
+                <div class="blocGauche gazeuses"></div>
+                <h3>Les Sirènes gazeuses</h3>
+                <div class="blocDroite gazeuses"></div>
+            </article>
+            <article class="container produits autre">
+               
+                <div class="flex-produits">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/calypso.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">Jus de fruichaaan</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/calypso.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">Calypso-Rose</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/calypso.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">Fi'goulue</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-produits">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/calypso.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">La merlette sans bec</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/calypso.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">Tutti frutti</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/calypso.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">Frais'Ja</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </article>
+            <article class="container produits mobile">
+               
+                <div class="flex-produits">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/calypso.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body  align-mobile">
+                            <h5 class="card-title">Jus de fruichaaan</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                   
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/calypso.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body  align-mobile">
+                            <h5 class="card-title">Fi'goulue</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-produits">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/calypso.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body  align-mobile">
+                            <h5 class="card-title">La merlette sans bec</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/calypso.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body  align-mobile">
+                            <h5 class="card-title">Frais'Ja</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-produits">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/calypso.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body  align-mobile">
+                            <h5 class="card-title">La merlette sans bec</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/calypso.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body  align-mobile">
+                            <h5 class="card-title">Frais'Ja</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </article>
+        </section>
+
+        <section class="categorie">
+            <article class="titreCategorie">
+                <div class="blocGauche juteuses"></div>
+                <h3>Les Sirènes juteuses</h3>
+                <div class="blocDroite juteuses"></div>
+            </article>
+            <article class="container produits autre">
+                <div class="flex-produits">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/becot-becot.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">Jus de coing</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/becot-becot.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">Rhubarbe à papa</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/becot-becot.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">Frutti Frutta</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-produits">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/becot-becot.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <a href="./produit.html"><h5 class="card-title">Bécot-bécot</h5></a>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/becot-becot.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">La maraichère</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/becot-becot.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body">
+                            <h5 class="card-title">Mira la belle</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </article>
+            <article class="container produits mobile">
+                <div class="flex-produits">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/becot-becot.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body align-mobile">
+                            <h5 class="card-title">Jus de coing</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/becot-becot.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body align-mobile">
+                            <h5 class="card-title">Rhubarbe à papa</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="flex-produits">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/becot-becot.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body align-mobile">
+                            <a href="./produit.html"><h5 class="card-title">Bécot-bécot</h5></a>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/becot-becot.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body align-mobile">
+                            <h5 class="card-title">La maraichère</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="flex-produits">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/becot-becot.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body align-mobile">
+                            <a href="./produit.html"><h5 class="card-title">Bécot-bécot</h5></a>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../image/produit_catalogue/becot-becot.jpg" class="card-img-top" alt="bouteille Calypso-Rose">
+                        <div class="card-body align-mobile">
+                            <h5 class="card-title">La maraichère</h5>
+                            <h6 clas="card-prix">7€50</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, sed?</p>
+                            <button class="btnPanier">ajouter au panier</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </article>
+        </section>
+
+        <section id="imageNewsletter">
+            <article id="newsletter" class="container">
+                <h2>Newsletter</h2>
+                <form class="flex-newsletter" action="">
+
+                    <label for="emailAddress">Ton e-mail*</label>
+                    <input class="form-control" type="email" id="email" class="emailTaille" name="email" placeholder="Ton e-mail" required>
+                    <input id="boutton" class="boutton-newsletter" name="bouton_envoi" type="submit" value="Envoyer" accesskey="e" aria-label="boutton envoyer">
+
+                </form>
+            </article>
+            
+        </section>
+
+
+
+    </main> 
+
+    <footer>
+        <section  class="container">
+            <article>
+                <ul>
+                    <li><a href="#">A propos</a><span>|</span></li>
+                    <li><a href="#">Mentions légales</a><span>|</span></li>
+                    <li><a href="#">Plan du site</a><span>|</span></li>
+                    <li><a href="#">Cookies</a><span>|</span></li>
+                    <li><a href="#">CGV</a><span>|</span></li>
+                    <li><a href="#">Contactez nous !</a><span>|</span></li>
+                    <li><a href="#"><i class="fab fa-facebook-square" aria-label="logo et lien facebook"></i></a><span>|</span></li>
+                    <li><a href="#"><i class="fab fa-instagram-square" aria-label="logo et lien instagram"></i></a><span>|</span></li>
+                    <li><a href="#"><i class="fab fa-linkedin" aria-label="logoe t lien linkedin"></i></a><span>|</span></li>
+                    <li><a href="#"><i class="fas fa-rss-square" aria-label="logo et lien flux rss"></i></a><span>|</span></li>
+                </ul>
+            </article>
+            <article id="copyright" >
+                <i id="copyright-logo" class="fas fa-copyright" aria-label="logo copyright"></i>
+                <p><span>https://www.loreley.fr</span> Tous droits réservés. Reproduction interdite sans autorisation.<br>Web Design et développement : <span>Ykhar studio</span> </p>
+            </article>  
+        </section>
+        
+    </footer>
+
+
+<!----------------------------------- SECTION JS ---------------------------------------------------------->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- js Michelsnik -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!-- Tarte au citron -->
+    <script src="../js/tarteAuCitron/tarteaucitron.js"></script>
+
+    <script>
+    tarteaucitron.init({
+        "privacyUrl": "", /* Privacy policy url */
+
+        "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+        "cookieName": "tarteaucitron", /* Cookie name */
+
+        "orientation": "middle", /* Banner position (top - bottom) */
+
+        "showAlertSmall": false, /* Show the small banner on bottom right */
+        "cookieslist": false, /* Show the cookie list */
+        
+        "showIcon": true, /* Show cookie icon to manage cookies */
+        "iconPosition": "BottomRight", /* Position of the icon between BottomRight, BottomLeft, TopRight and TopLeft */
+
+        "adblocker": false, /* Show a Warning if an adblocker is detected */
+
+        "DenyAllCta" : true, /* Show the deny all button */
+        "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+        "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
+
+        "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+        "removeCredit": false, /* Remove credit link */
+        "moreInfoLink": true, /* Show more info link */
+        "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+
+        //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for subdomain website */
+
+        "readmoreLink": "", /* Change the default readmore link pointing to tarteaucitron.io */
+        
+        "mandatory": true /* Show a message about mandatory cookies */
+    });
+    </script>
+
+        <!-- tarte au citron analtics -->
+        <script type="text/javascript">
+        tarteaucitron.user.analyticsUa = 'UA-XXXXXXXX-X';
+        tarteaucitron.user.analyticsMore = function () { /* add here your optionnal ga.push() */ };
+        (tarteaucitron.job = tarteaucitron.job || []).push('analytics');
+        </script>
+
+        <!-- tarte au citron google maps -->
+        <script type="text/javascript">
+        tarteaucitron.user.googlemapsKey = 'API KEY';
+        (tarteaucitron.job = tarteaucitron.job || []).push('googlemaps');
+    </script>
+
+    
+    <!-- tarte au citron google tag manager -->
+    <script type="text/javascript">
+    tarteaucitron.user.googletagmanagerId = 'GTM-XXXX';
+    (tarteaucitron.job = tarteaucitron.job || []).push('googletagmanager');
+    </script>
+    
+    <!-- tarte au citron facebook pixel -->
+    <script type="text/javascript">
+        tarteaucitron.user.facebookpixelId = 'YOUR-ID'; tarteaucitron.user.facebookpixelMore = function () { /* add here your optionnal facebook pixel function */ };
+        (tarteaucitron.job = tarteaucitron.job || []).push('facebookpixel');
+        </script>
+
+    <!-- script js interne -->
+        <!-- script principal -->
+        <script src="js/main.js"></script>
+        <!-- script formulaire -->
+        <script src="js/formulaire.js"></script>
+        <!-- script menu slide -->
+        <script src="js/menu.js"></script>
+        <!-- script cookie -->
+        <script src="js/cookie.js"></script>
+
+</body>
+</html>

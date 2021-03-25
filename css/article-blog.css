@@ -1,0 +1,72 @@
+header{
+    padding-top: 160px;
+}
+
+.titre-sous-titre-date{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.titre-sous-titre-date p{
+    font-size: 13px;
+
+}
+
+.header-section-flex{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.header-section-flex-p{
+margin-top: 150px;
+margin-left: 60px;
+}
+
+.header-padding{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/* PARTIE ARTCILE INTERNE */
+
+
+
+.section-article{
+
+    text-align: center;
+    margin-top: 90px;
+}
+
+
+.section-article p{
+    margin-bottom: 50px;
+    padding-left: 220px;
+    padding-right: 220px;
+}
+
+
+
+.article-blog-reglage{
+
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+
+.section-reglage-card-blog{
+
+padding-left: 220px;
+
+
+}
+
+
+.reglage-card{
+
+    margin-right: 40px;
+
+}

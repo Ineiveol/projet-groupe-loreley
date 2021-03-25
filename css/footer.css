@@ -1,0 +1,104 @@
+footer{
+    background-image: url(../image/background/boatFooter.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 15em;
+}
+footer article ul{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    align-items: center;
+}
+
+footer article ul li a{
+    padding-right: 1em;
+    padding-left: 1rem;
+    color: var(--color--bleu-marine);
+}
+
+#copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+}
+
+#copyright i{
+    font-size: 2em;
+}
+
+#copyright p{
+    margin-left: 50px;
+    text-align: center;
+}
+#copyright p span{
+    font-weight: bold;
+}
+
+
+@media all and (max-width: 1279px){
+    footer{
+        height: 10em;
+    }
+    footer .container article ul li a{
+        font-size: 0.7rem;
+    }
+
+    footer .container article ul li a i{
+        font-size: 0.9rem;
+    }
+    #copyright{
+        margin-top: 1em;
+    }
+
+}
+
+@media all and (max-width: 768px){
+    footer article ul{
+        padding-top: 1rem;
+    }
+    footer .container article ul li{
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        text-align: center;
+    }
+    footer .container article ul li span{
+        display: none;
+    }
+    #copyright{
+        margin-top: 0;
+    }
+    #copyright i{
+        font-size: 1em;
+    }
+    #copyright p{
+        font-size: 0.8rem;
+        margin-left: 15px;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 480px){
+    footer{
+        height: 25rem;
+    }
+    footer .container article ul{
+        display: block;
+    }
+    footer .container article ul li{
+        margin-top: 1rem;
+    }
+    #copyright i{
+        font-size: 0.8rem;
+    }
+    #copyright p{
+        font-size: 0.6rem;
+        margin-left: 5px;
+        text-align: center;
+    }
+}

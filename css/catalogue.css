@@ -1,0 +1,192 @@
+/* page CSS spécifique  au catalogue */
+#logoMenu {
+    visibility: visible;
+}
+
+.btnShop{
+    margin: 0 0 2rem 0;
+}
+
+.btnPanier{
+    background-color: var(--color--beige-panier);
+    border: none;
+    border-radius: 10px;
+    padding: 9px 14px 11px 14px;
+    text-align: center;
+    margin-left: -5px;
+
+    font-family: 'poppins';
+    text-transform: uppercase;
+    color: var(--color--bleu-marine);
+    
+}
+
+/* paramettre header */
+header{
+    background-image: none;
+    padding-top: 8rem;
+    height: auto;
+}
+
+#blocOrnement{
+    width: 55rem;
+    height: 5rem;
+    background-color: var(--color--beige-panier);
+    position: absolute;
+}
+.titreH{
+    position: relative;
+}
+
+/* modification du slide */
+.formatCarrousel{
+
+    width: 60vw;
+    height: auto;
+
+    margin-right: auto;
+    margin-left: auto;    
+    margin-top: 2rem;
+
+}
+.textCarrousel{
+    background-color: rgba(245, 202, 195, 0.8);
+    padding: 5rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.textCarrousel h5, p {
+    margin-bottom: 2rem;
+}
+
+.carousel-format{
+    width: 100%;
+    height: 70vh;
+}
+
+/* Section Les sirènes plates */
+.flex-produits{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.categorie{
+    margin-top: 10rem;
+}
+.titreCategorie{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.blocGauche{
+    width: 20vw;
+    height: 5rem;
+}
+.blocDroite{
+    width: 50vw;
+    height: 5rem;
+}
+.produits{
+    margin-top: 2rem;
+}
+
+.mobile{
+    display: none;
+}
+
+.plate{
+    background-color: var(--color--bleu-gris);
+}
+
+.card{
+    border: none;
+}
+
+.card-title{
+    margin-bottom: 1rem;
+}
+
+.card-text{
+    margin-top: 1rem;
+}
+
+/* Section sirènes gazeuses */
+.gazeuses{
+    background-color: var(--color--rouge);
+}
+
+/* section sirènes juteuses */
+.juteuses{
+    background-color: var(--color--bleu-marine);
+}
+
+/* responsive écran hd */
+@media all and (max-width: 1279px){
+    #blocOrnement{
+        width: 40rem;
+    }
+
+    /* modification du slide */
+    .formatCarrousel{
+        width: 70vw;
+    }
+}
+
+/* responsive écran tablette */
+@media all and (max-width: 768px){
+    #blocOrnement{
+        width: 35rem;
+    }
+/* modification du slide */
+    .formatCarrousel{
+        width: 100%;
+        height: 35vh;
+    }
+/* Section Les sirènes plates */
+    .flex-produits{
+        margin-top: 1rem;
+    }
+
+    .autre{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+}
+
+/* responsive écran mobile */
+@media all and (max-width: 480px){
+    .formatCarrousel{
+        width: 100%;
+        height: 30vh;
+    }
+    .textCarrousel{
+        background-color: rgba(245, 202, 195, 0.8);
+        padding: 5rem;
+        border-radius: 15px;
+        margin-bottom: 1rem;
+    }
+
+    #premiereCategorie{
+        margin-top: -0.1rem;
+    }
+
+    .flex-produits{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .align-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

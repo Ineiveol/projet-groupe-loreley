@@ -1,0 +1,134 @@
+/* Mise en place Nav */
+
+.toggle{
+
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+nav i{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+#logoMenu{
+    width: 232px;
+    height: 75.27px; 
+    visibility: hidden;
+
+    transition: all 0.7s;  
+}
+
+.navbar-apresTransforme #logoMenu{
+    visibility: visible;
+    transition: all 0.7s;  
+}
+
+nav{
+    background-color: var(--color--gris-nav);
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    padding: 1em 0;
+    z-index: 9999;
+}
+
+#menu {
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#menu li{
+    text-decoration: none;
+}
+
+#menu li a{
+    color: #162742;
+}
+
+ul{
+    list-style: none;
+}
+
+@media all and (max-width: 1279px){
+    #menu{
+        width: 30vw;
+    }
+    #menu li a{
+        font-size: 0.7rem;
+    }
+    #menu li a i{
+        font-size: 1rem;
+        margin-top: -2px;
+    }
+}
+
+@media all and (max-width: 768px){
+    /* configuration bouton toggle */
+    .toggle{
+        display: block;
+        margin-left: 2rem;
+        margin-top: 3rem;
+    }
+    .fermer {
+        display: none;
+    }
+    
+    .ouvrir {
+        display: block;
+    }
+    
+    .open .fermer {
+        display: block;
+    }
+    
+    .open .ouvrir {
+        display: none;
+    }
+
+    /* replacement contenu menu */
+    nav{
+        display: contents;
+    }
+    #logoMenu{
+        width: 10rem;
+        visibility: visible;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .logo{
+        width: 100%;
+    }
+    #menu{
+        margin-top: 5rem;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .open #menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .open #menu li{
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        
+    }
+    .open #menu li a{
+        font-size: 1.5rem;
+    }
+
+    .open #menu li a i{
+        font-size: 1.5rem;
+    }
+}
+
+@media all and (max-width: 480px){
+
+}

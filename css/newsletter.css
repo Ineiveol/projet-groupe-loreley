@@ -1,0 +1,60 @@
+/* Newsletter */
+/* section newsletter */
+#newsletter{
+    background-color: var(--color--bleu-gris);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 8rem;
+    width: 768px;
+    height: auto;
+    z-index: 50;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#boutton{
+    margin-right: 0;
+}
+
+.flex-newsletter label, input{
+    margin-bottom: 1rem;
+}
+
+/* section fond newsletter */
+#imageNewsletter{
+    background-image: url(../image/Newsletter.jpg);
+    background-size: cover;
+    background-position:top;
+    height: 65vh;
+    z-index: 1;
+}
+
+@media all and (max-width: 480px){
+    #newsletter{
+        width: 78vw;
+    }
+}
+
+/* <section id="imageNewsletter">
+        <article id="newsletter" class="container">
+            <h2>Newsletter</h2>
+            <form class="flex-newsletter" action="">
+
+                <label for="emailAddress">Ton e-mail*</label>
+                <input class="form-control" type="email" id="email" class="emailTaille" name="email" placeholder="Ton e-mail" required>
+                <input id="boutton" class="boutton-newsletter" name="bouton_envoi" type="submit" value="Envoyer" accesskey="e" aria-label="boutton envoyer">
+
+            </form>
+        </article>
+        
+    </section> */
